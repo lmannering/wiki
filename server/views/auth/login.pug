@@ -26,7 +26,7 @@ html(data-logic='login')
       each bg in _.sampleSize([1, 2, 3],3)
         div(style='background-image:url(/images/bg_' + bg + '.jpg);')
     #root
-      img(src='https://adc-dev-api.aao.gov.au/static/restapi_app/dist/img/logo/surveys/logo-hector-dark.png', style="float: left;width: 100px;margin: 0 -7px;")
+      img(src="/images/surveys/logo-"+appconfig.title+".png", style="float: left;width: 100px;margin: 0 -7px;")
       h1= appconfig.title
       h2= t('auth:loginrequired')
       if appflash.length > 0
